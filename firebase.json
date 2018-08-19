@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {README.md
+        "source": "/",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/version",
+        "function": "version"
+      },
+      {
+        "source": "/screenshot",
+        "function": "screenshot"
+      },
+      {
+        "source": "/pdf",
+        "function": "pdf"
+      }
+    ]
+  }
+}
