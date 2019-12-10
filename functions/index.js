@@ -23,6 +23,7 @@ app.post('/screenshot', async (req, res) => {
     try {
         const page = await browser.newPage()
         await page.goto(`data:text/html,${html}`, {waitUntil: 'networkidle2'})
+        await page.evaluateHandle('document.fonts.ready');
 
         const buffer = await page.screenshot({
             fullPage: true
