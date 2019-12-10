@@ -12,10 +12,10 @@
     "express": "^4.16.3",
     "firebase-admin": "~6.0.0",
     "firebase-functions": "^2.0.3",
-    "puppeteer": "^1.20.0"
+    "puppeteer": "^1.7.0"
   },
   "private": true,
   "engines": {
     "node": "8"
-  }
+  }  
 }
